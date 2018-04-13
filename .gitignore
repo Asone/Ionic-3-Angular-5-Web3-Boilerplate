@@ -1,0 +1,5 @@
+coverage/
+www/
+*.code-workspace
+.DS_Store
+.editorconfig
