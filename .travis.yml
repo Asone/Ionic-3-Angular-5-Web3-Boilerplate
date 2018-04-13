@@ -34,6 +34,7 @@
     "export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/23.0.2"
   ],
   "script": [
+    "ls",
     "cordova prepare",
     "npm test"
   ],
