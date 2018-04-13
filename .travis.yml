@@ -27,7 +27,6 @@ matrix:
         - oracle-java8-set-default
         - yarn
         - jq
-        - nodejs
     licenses:
     - android-sdk-preview-license-.+
     - android-sdk-license-.+
