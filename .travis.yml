@@ -1,7 +1,7 @@
 branches:
   only:
   - master
-  - develop
+  - travis-configuration
 matrix:
   include:
   - os: linux
@@ -27,6 +27,7 @@ matrix:
         - oracle-java8-set-default
         - yarn
         - jq
+        - nodejs
     licenses:
     - android-sdk-preview-license-.+
     - android-sdk-license-.+
@@ -54,7 +55,7 @@ before_install:
 before_script:
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then ./travis/addkeys.sh ; fi
 script:
-- yarn install
+- npm install
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then ./travis/build-ios.sh && ./travis/package-ios.sh ; fi
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then ./travis/build-android.sh && ./travis/package-android.sh ; fi
 env:
