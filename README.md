@@ -1,6 +1,8 @@
 
 # Another Ionic 3 & Angular 5 Boilerplate
 
+[![Build Status](https://travis-ci.org/okode/ionic-travis.svg?branch=master)](https://travis-ci.org/okode/ionic-travis)
+
 The following repo provides a boilerplate for projects intended to be written with Ionic 3 & Angular 5. 
 
 As there are many boilerplates for Ionic 3 and Angular 5, i couldnt find any satisfying repo providing a complete configuration as i would expect it personally, so here is my own. 
@@ -20,12 +22,13 @@ As there are many boilerplates for Ionic 3 and Angular 5, i couldnt find any sat
 
 # Structure
 
-Even if there is perfect folder structure, some recommandations exist about how to structure your project. 
+Even if there is no perfect folder structure, some recommandations exist about how to structure your project. 
 The repo brings the described structures and coding conventions, trying to stick as much as possible to the official recommendations.
 
 ## Root Structure
 
 Root level is described as following : 
+
 ```
 - src/					=> Sources of the application
 - test-config/        	=> Config files for environments handling
@@ -71,12 +74,12 @@ Ionic pages classes should follow the same convention, however we will put here 
 
 ```
 - MyPage
-	- MyPage.page.ts					=> Component Class
+	- MyPage.page.ts				=> Component Class
 	- MyComponent.page.spec.ts			=> Unit tests
 	- MyComponent.page.e2e.ts			=> end-to-end tests
 	- MyComponent.page.scss				=> SASS/CSS styles
 	- MyComponent.page.html				=> HTML Template
-	- MyComponent.page.module.ts		=> Page Module
+	- MyComponent.page.module.ts	        => Page Module
 ```
 
 # Dependencies
