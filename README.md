@@ -1,7 +1,7 @@
 
 # Another Ionic 3 & Angular 5 Boilerplate
 
-[![Build Status](https://travis-ci.org/okode/ionic-travis.svg?branch=master)](https://travis-ci.org/okode/ionic-travis)
+[![Build Status](https://travis-ci.org/Asone/ionic-3_Angular-5_Custom-Boilerplate.svg?branch=master)](https://travis-ci.org/Asone/ionic-3_Angular-5_Custom-Boilerplate)
 
 The following repo provides a boilerplate for projects intended to be written with Ionic 3 & Angular 5. 
 
