@@ -30,15 +30,15 @@ The repo brings the described structures and coding conventions, trying to stick
 Root level is described as following : 
 
 ```
-- src/					=> Sources of the application
-- test-config/        	=> Config files for environments handling
+- src/				=> Sources of the application
+- test-config/        		=> Config files for environments handling
 -  package.json			=> Configure dependencies and npm run scripts
 - tsconfig.json			=> TypeScript configuration
 - ionic.config.json		=> Ionic configuration
 - config.xml			=> Application configuration
 - environments/			=> Environment configuration
-- config/ 
-	- Test/ 			=> Config for environments handling
+- config/ 			=> Config folder containing main webpack configuration
+- Test/ 			=> Config for environments handling
 ```
 
 ## Application Structure 
@@ -47,7 +47,7 @@ Root level is described as following :
 Global structure is the following : 
 
 ```
-- _Components			=> Components for Angular
+- _Components				=> Components for Angular
 - _Models				=> Custom types and interfaces 
 - _TestData				=> Mocked data for tests & development
 - _Services				=> Injectable classes for services like API requests
@@ -61,7 +61,7 @@ Following good practices, the structure of an Angular component should be as fol
 
 ```
 - MyComponent
-	- MyComponent.component.ts				=> Component Class
+	- MyComponent.component.ts			=> Component Class
 	- MyComponent.component.spec.ts			=> Unit tests
 	- MyComponent.component.e2e.ts			=> end-to-end tests
 	- MyComponent.component.scss			=> SASS/CSS styles
@@ -79,7 +79,7 @@ Ionic pages classes should follow the same convention, however we will put here 
 	- MyComponent.page.e2e.ts			=> end-to-end tests
 	- MyComponent.page.scss				=> SASS/CSS styles
 	- MyComponent.page.html				=> HTML Template
-	- MyComponent.page.module.ts	        => Page Module
+	- MyComponent.page.module.ts	        	=> Page Module
 ```
 
 # Dependencies
