@@ -20,7 +20,12 @@ module.exports = function(config) {
       },
       'src/**/*.spec.*'
     ],
-
+    customLaunchers: {
+      Chrome_travis_ci: {
+          base: 'Chrome',
+          flags: ['--no-sandbox']
+      }
+    },
     proxies: {
       '/assets/': './src/assets/'
     },
@@ -61,5 +66,9 @@ module.exports = function(config) {
     concurrency: Infinity,
   };
 
+  if (process.env.TRAVIS) {
+    _config.browsers = ['Chrome_travis_ci'];
+  }
+ 
   config.set(_config);
 };
