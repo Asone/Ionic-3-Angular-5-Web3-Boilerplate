@@ -1,0 +1,29 @@
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-12>
+                <h2>Articles</h2>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-12>
+                <ng-template *ngIf="articles.length > 0; then articlesList; else noArticles"></ng-template>
+                <ng-template #projectsList>
+                <ion-card *ngFor="let article of articles; let index = i" (click)="goto(project.id)">
+                        <ion-card-content>
+                            <ion-card-title>
+                                {{article.title}}
+                            </ion-card-title>
+                            <p>
+                                {{article.excerpt}}
+                            </p>
+                        </ion-card-content>
+                    </ion-card>
+            </ng-template>
+            <ng-template #noProject>
+                <div class="alert alert-info">Aucun projet n'a été trouvé</div>
+            </ng-template>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
