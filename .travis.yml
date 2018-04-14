@@ -11,7 +11,8 @@
         "g++-4.8",
         "openjdk-7-jdk",
         "lib32stdc++6",
-        "lib32z1"
+        "lib32z1",
+        "google-chrome-stable"
       ]
     }
   },
