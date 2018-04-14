@@ -32,7 +32,9 @@
     "echo y | ./android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-android-m2repository",
     "echo y | ./android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-m2repository",
     "export ANDROID_HOME=$PWD/android-sdk-linux",
-    "export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/23.0.2"
+    "export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/23.0.2",
+    "sudo chown root /opt/google/chrome/chrome-sandbox",
+    "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
   ],
   "script": [
     "ls",
