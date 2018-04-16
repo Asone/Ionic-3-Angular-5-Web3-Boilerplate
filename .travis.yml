@@ -41,9 +41,9 @@
     "sh -e /etc/init.d/xvfb start"
   ],
   "script": [
-    "ls",
     "cordova prepare",
-    "npm test"
+    "npm test",
+    "ionic build"
   ],
   "os": "linux",
   "group": "stable",
