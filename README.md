@@ -30,15 +30,15 @@ The repo brings the described structures and coding conventions, trying to stick
 Root level is described as following : 
 
 ```
-- src/					=> Sources of the application
-- test-config/        	=> Config files for environments handling
+- src/				=> Sources of the application
+- test-config/        		=> Config files for environments handling
 -  package.json			=> Configure dependencies and npm run scripts
 - tsconfig.json			=> TypeScript configuration
 - ionic.config.json		=> Ionic configuration
 - config.xml			=> Application configuration
 - environments/			=> Environment configuration
-- config/ 
-	- Test/ 			=> Config for environments handling
+- config/ 			=> Config folder containing main webpack configuration
+- Test/ 			=> Config for environments handling
 ```
 
 ## Application Structure 
@@ -47,7 +47,7 @@ Root level is described as following :
 Global structure is the following : 
 
 ```
-- _Components			=> Components for Angular
+- _Components				=> Components for Angular
 - _Models				=> Custom types and interfaces 
 - _TestData				=> Mocked data for tests & development
 - _Services				=> Injectable classes for services like API requests
@@ -61,7 +61,7 @@ Following good practices, the structure of an Angular component should be as fol
 
 ```
 - MyComponent
-	- MyComponent.component.ts				=> Component Class
+	- MyComponent.component.ts			=> Component Class
 	- MyComponent.component.spec.ts			=> Unit tests
 	- MyComponent.component.e2e.ts			=> end-to-end tests
 	- MyComponent.component.scss			=> SASS/CSS styles
@@ -79,7 +79,7 @@ Ionic pages classes should follow the same convention, however we will put here 
 	- MyComponent.page.e2e.ts			=> end-to-end tests
 	- MyComponent.page.scss				=> SASS/CSS styles
 	- MyComponent.page.html				=> HTML Template
-	- MyComponent.page.module.ts	        => Page Module
+	- MyComponent.page.module.ts	        	=> Page Module
 ```
 
 # Dependencies
@@ -88,15 +88,16 @@ Ionic pages classes should follow the same convention, however we will put here 
 
 ### Core :
 
-|         Dependency    	 |   Description         			         | Version   | Documentation                |
+| Dependency | Description | Version | Documentation |
 |----------------|-------------------------------|-----------------------------|------|
-|Ionic| Javascript Hybrid Application development framework            |v.3.20.2      
-|Angular| SPA Framework for webapp development           | @angular/core : v.5.2.9 <br /> angular-cli : v.1.2.3 
-Cordova |mobile application development framework     | v8.0.0  | JavaScript super-set for strong-typing code           | v2.4.2      |
-|Karma           |Unit testing| Karma : v.2.0.0 <br /> karma-webpack : v.^3.0.0 |
-| Jasmine 		 | Behavior-driven development framework | v.^2.8.6
-| Istanbul		 | test coverage reporting. Compatible reports for Jenkins. Package name : istanbul-instrumenter-loader  | v.^3.0.1
-| Webpack		 | Bundle handler | v.3.8.1
+|Ionic| Javascript Hybrid Application development framework |v.3.20.2 | [Documentation](https://ionicframework.com/docs/) |
+|Angular| SPA Framework for webapp development | @angular/core : v.5.2.9 <br /> angular-cli : v.1.2.3 | [Documentation](https://angular.io/docs) |
+Cordova |mobile application development framework | v8.0.0 | [Documentation](https://cordova.apache.org/docs/) |
+| Typescript |  JavaScript super-set for strong-typing code | v2.4.2 | [Documentation](http://www.typescriptlang.org/docs/) |
+|Karma |Unit testing| Karma : v.2.0.0 <br /> karma-webpack : v.^3.0.0 | [Documentation](https://karma-runner.github.io/) |
+| Jasmine | Behavior-driven development framework | v.^2.8.6 | [Documentation](https://jasmine.github.io/pages/docs_home.html) |
+| Istanbul | test coverage reporting. Compatible reports for Jenkins. Package name : istanbul-instrumenter-loader | v.^3.0.1 | [Documentation](https://github.com/gotwarlost/istanbul) |
+| Webpack | Bundle handler | v.3.8.1 | [Documentation](https://webpack.js.org/guides/) |
 
 ### Cordova plugins :
 
