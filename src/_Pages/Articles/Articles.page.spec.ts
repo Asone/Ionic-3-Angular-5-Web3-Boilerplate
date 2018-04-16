@@ -1,5 +1,5 @@
 import { async, TestBed } from '@angular/core/testing';
-import { IonicModule, Platform } from 'ionic-angular';
+import { IonicModule, Platform, NavController } from 'ionic-angular';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,7 +25,7 @@ describe('[Pages:Articles] Performs tests on Articles Page', () => {
           SharedModule,
           IonicModule.forRoot(ArticlesPage)
         ],
-        providers: [NativePageTransitions]
+        providers: [NativePageTransitions, NavController]
       })
     }));
   
