@@ -83,7 +83,6 @@ import { AboutPageModule } from '../_Pages/About/About.page.module';
 })
 export class AppModule {
   private heartBeat: any;
-  private network : boolean;
 
   constructor(
     private storage: Storage,
@@ -114,7 +113,7 @@ export class AppModule {
     })
     .then( (res: SessionModel) => {
       if(!res) return;
-      this._authService.setAuth(true);
+      this._authService.setAuthState(true);
       this._sessionService.load(res);
       return true;
     }).catch( err => {
