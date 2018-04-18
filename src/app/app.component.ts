@@ -1,5 +1,5 @@
 /** Angular Core **/
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 /** Ionic Core **/
 import { Platform, MenuController, NavController } from 'ionic-angular';
@@ -31,8 +31,8 @@ export class MyApp{
     _sessionService: SessionService,
     _authService: AuthService
     ) {
-    platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
+      platform.ready().then(() => {
+      // Platform is ready and our plugins are available.
 
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
