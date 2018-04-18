@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, Config } from 'ionic-angular';
-
-import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/native-page-transitions';
+import { IonicPage, NavController } from 'ionic-angular';
 
 @IonicPage({
     name: 'articles'
@@ -13,8 +11,7 @@ import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/na
 export class ArticlesPage {
 
     constructor (
-        public _nav: NavController,
-        private config: Config
+        public _nav: NavController
     ) {}
 
     ngOnInit () {}
