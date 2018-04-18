@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import filter from 'lodash-es/filter';
 import { IonicPage } from 'ionic-angular';
 import { UserModel } from '../../_Models/user.model';
 
