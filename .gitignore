@@ -1,6 +1,6 @@
 coverage/
-www/
 node_modules/
 *.code-workspace
 .DS_Store
 .editorconfig
+www/build
