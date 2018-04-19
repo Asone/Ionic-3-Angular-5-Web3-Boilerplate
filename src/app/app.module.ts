@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 /** Custom Components **/
 import { MyApp } from './app.component';
-import { MainPage } from '../_Pages/Main/main.component';
+import { MainPage } from '../_Pages/Main/main.page';
 import { WelcomePage } from '../_Pages/Welcome/welcome.page';
 
 /** Custom Services **/

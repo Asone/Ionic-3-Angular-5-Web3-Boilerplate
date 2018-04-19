@@ -46,4 +46,6 @@ export class SessionService {
     public getSession = (): Observable<SessionModel> => {
         return this.session.asObservable();
     }
+
+    
 }

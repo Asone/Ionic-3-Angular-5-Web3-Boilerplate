@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Subject }    from 'rxjs/Subject';
+
 import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject'; 
-import { SessionModel } from '../../_Models/session.model';
-import { HttpClient } from "@angular/common/http";
+
 import { AuthAPI } from './auth.api.service';
+
+import { SessionModel } from '../../_Models/session.model';
 
 @Injectable()
 export class AuthService {

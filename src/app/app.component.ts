@@ -9,7 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 /** Custom Components **/
-import { MainPage } from "../_Pages/Main/main.component";
+import { MainPage } from "../_Pages/Main/main.page";
 
 /** Custom Services **/
 import { SessionService } from "../_Services/Session/session.service";
