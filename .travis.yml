@@ -21,8 +21,8 @@
   },
   "script": [
     "cordova prepare",
+    "ionic build",
     "npm test",
-    "ionic build"
   ],
   "install": [
     "npm install -g gulp bower cordova ionic",
