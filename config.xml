@@ -80,8 +80,6 @@
     <allow-navigation href="http://192.168.0.34:8100" />
     <allow-navigation href="http://192.168.43.239:8100" />
     <allow-navigation href="http://10.176.237.18:8100" />
-    <engine name="browser" spec="~5.0.3" />
-    <engine name="android" spec="~7.0.0" />
     <allow-navigation href="http://10.176.236.222:8100" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <plugin name="cordova-plugin-device" spec="^2.0.1" />
@@ -98,7 +96,9 @@
         <variable name="ANDROID_PATH_PREFIX" value="/" />
     </plugin>
     <plugin name="com.telerik.plugins.nativepagetransitions" spec="^0.6.5" />
-    <engine name="ios" spec="~4.5.4" />
     <allow-navigation href="http://10.176.236.93:8100" />
     <allow-navigation href="http://10.9.58.158:8100" />
+    <engine name="browser" spec="~5.0.3" />
+    <engine name="android" spec="~7.0.0" />
+    <engine name="ios" spec="^4.5.4" />
 </widget>
