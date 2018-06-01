@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 import { IonicPage, NavController } from 'ionic-angular';
-
 @IonicPage({
-  name: 'about'
+  name: 'about',
+  segment: '/about'
 })
 @Component({
-  selector: 'page-about',
+  selector: 'Page[about]',
   templateUrl: 'About.page.html',
 })
 export class AboutPage {

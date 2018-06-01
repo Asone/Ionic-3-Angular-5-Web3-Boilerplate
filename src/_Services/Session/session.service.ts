@@ -2,6 +2,7 @@ import { Network } from '@ionic-native/network';
 import { Injectable } from '@angular/core';
 import { Subject }    from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject'; 
 import { SessionModel } from '../../_Models/session.model';
 
 @Injectable()
@@ -16,13 +17,14 @@ export class SessionService {
     private init = ():boolean => {
         // disabled as network provides change detection
         //   setInterval(() => { return this.pulse(); },2500);
-        
-        this.network.onConnect = (): any => { this.partum(); };
-        this.network.onchange = (): any => { this.mortem(); };
+        this.network.onConnect = ():any => { this.partum() };
+    
+        this.network.onchange = (): any => { this.mortem() } ;
         return true;
     }
 
     partum = () => {
+        console.log("Lux fiat");
         this.networkState.next(true);
     };
 
@@ -46,6 +48,4 @@ export class SessionService {
     public getSession = (): Observable<SessionModel> => {
         return this.session.asObservable();
     }
-
-    
 }

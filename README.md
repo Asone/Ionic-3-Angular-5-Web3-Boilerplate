@@ -139,20 +139,12 @@ Cordova |mobile application development framework | v8.0.0 | [Documentation](htt
 |karma-jasmine | behavior driven framework | |
 |karma-jasmine-html-reporter|  pretty ui for jasmine
 
-
 ## Angular Modules
-
-| Dependency package |  Description| Version |
-|-|-|-|
-| @ionic/storage | Provides local storage to app  | |
-| @ionic/network | Provides network module to app | |
 
 
 ## Ionic Modules
 
-| Dependency package |  Description| Version |
-|-|-|-|
-| Native Page transitions | Animation plugin for page transitions in app | |
+
 
 
 # Included features

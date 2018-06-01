@@ -1,6 +1,6 @@
 {
-  "name": "E-cus",
-  "short_name": "Ecus",
+  "name": "Ionic-3_Angular-5_Boilerplate",
+  "short_name": "IAB",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{

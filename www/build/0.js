@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 300:
+/***/ 299:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30,7 +30,7 @@ var HomePageModule = (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_3__app_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_0__Home_page__["a" /* HomePage */])
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_0__Home_page__["a" /* HomePage */])
             ],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_0__Home_page__["a" /* HomePage */]

@@ -9,10 +9,12 @@ import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/na
 import {
   PlatformMock,
   StatusBarMock,
-  SplashScreenMock
+  SplashScreenMock,
+  NavMock
 } from '../../../test-config/mocks-ionic';
 
 import { SharedModule } from '../../app/shared.module';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('[Pages:Articles] Performs tests on Articles Page', () => {
     let fixture;
@@ -20,12 +22,15 @@ describe('[Pages:Articles] Performs tests on Articles Page', () => {
   
     beforeEach( async( () => {
       TestBed.configureTestingModule({
+
+        schemas: [CUSTOM_ELEMENTS_SCHEMA],
         declarations: [ArticlesPage],
         imports: [
           SharedModule,
           IonicModule.forRoot(ArticlesPage)
         ],
-        providers: [NativePageTransitions, NavController]
+        providers: [NativePageTransitions,
+          {provide: NavController, useClass : NavMock}]
       })
     }));
   

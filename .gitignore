@@ -1,6 +1,8 @@
 coverage/
-node_modules/
+documentation/
 *.code-workspace
 .DS_Store
 .editorconfig
-www/build
+node_modules/
+.vscode
+www/build/

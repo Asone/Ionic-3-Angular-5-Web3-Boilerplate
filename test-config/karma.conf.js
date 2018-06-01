@@ -24,6 +24,18 @@ module.exports = function(config) {
       Chrome_travis_ci: {
           base: 'Chrome',
           flags: ['--no-sandbox']
+      },
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: [
+          '--no-sandbox',
+          '--headless',
+          '--disable-gpu',
+          '--disable-translate',
+          '--disable-extensions',
+          // Without a remote debugging port, Google Chrome exits immediately.
+          '--remote-debugging-port=9876'
+        ]
       }
     },
     proxies: {
@@ -32,7 +44,7 @@ module.exports = function(config) {
 
     preprocessors: {
       './test-config/karma-test-shim.js': ['webpack'],
-      './src/**/*.spec.*':['webpack','coverage']
+      './src/**/*.spec.*':['webpack']
     },
 
     webpack: webpackConfig,
@@ -56,7 +68,7 @@ module.exports = function(config) {
       fixWebpackSourcePaths: true
     },
 
-    reporters: config.coverage ? ['kjhtml', 'dots','coverage','coverage-istanbul'] : ['kjhtml', 'dots'],
+    reporters: config.coverage ? ['kjhtml', 'dots'] : ['kjhtml', 'dots'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
@@ -67,9 +79,11 @@ module.exports = function(config) {
   };
 
   if (process.env.TRAVIS) {
-    _config.browsers = ['Chrome_travis_ci'];
+    _config.browsers = ['ChromeHeadlessNoSandbox'];
     _config.singleRun = true;
     _config.concurrency = 1;
+    _config.browserDisconnectTimeout = 25000;
+    _config.browserNoActivityTimeout = 25000;
   }
  
   config.set(_config);

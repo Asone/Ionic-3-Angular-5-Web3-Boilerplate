@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 /** Custom Components **/
 import { MyApp } from './app.component';
-import { MainPage } from '../_Pages/Main/main.page';
+import { MainPage } from '../_Pages/Main/main.component';
 import { WelcomePage } from '../_Pages/Welcome/welcome.page';
 
 /** Custom Services **/
@@ -83,6 +83,7 @@ import { AboutPageModule } from '../_Pages/About/About.page.module';
 })
 export class AppModule {
   private heartBeat: any;
+  private network : boolean;
 
   constructor(
     private storage: Storage,
@@ -113,7 +114,7 @@ export class AppModule {
     })
     .then( (res: SessionModel) => {
       if(!res) return;
-      this._authService.setAuthState(true);
+      this._authService.setAuth(true);
       this._sessionService.load(res);
       return true;
     }).catch( err => {

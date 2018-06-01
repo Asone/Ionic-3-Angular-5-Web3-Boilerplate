@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
-
+import { Subject }    from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject'; 
-
-import { AuthAPI } from './auth.api.service';
-
 import { SessionModel } from '../../_Models/session.model';
+import { HttpClient } from "@angular/common/http";
+import { AuthAPI } from './auth.api.service';
 
 @Injectable()
 export class AuthService {
@@ -13,21 +12,17 @@ export class AuthService {
     public state : boolean;
     constructor(private _authAPI:AuthAPI) {}
 
-    getAuthState = (): Observable<boolean> => {
+    private init() {}
+
+    getAuthSta = (): Observable<boolean> => {
         return this.authState.asObservable();
     }
 
-    setAuthState = (state: boolean) => {
+    setAuth = (state: boolean) => {
         this.state = state;
         this.authState.next(state);
     }
     
-    /**
-     * @param session : SessionModel : Data model for session resuming
-     * 
-     * @returns Promise<boolean> : Session has been resumed
-     */
-
     resume = (session: SessionModel): Promise<boolean> => {
         return this._authAPI.resume(session).then(res => {
             if(!res.result) return false;
