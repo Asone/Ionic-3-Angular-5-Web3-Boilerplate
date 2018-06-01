@@ -68,7 +68,7 @@ module.exports = function(config) {
 
   if (process.env.TRAVIS) {
     console.log(Object.keys(_config));
-    _config.browsers = ['Chrome', 'ChromeHeadless', 'ChromeHeadlessNoSandbox'];
+    _config.browsers = ['ChromeHeadlessNoSandbox'];
     _config.singleRun = true;
     _config.customLaunchers = {
       ChromeHeadlessNoSandbox: {
