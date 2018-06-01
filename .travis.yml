@@ -25,7 +25,7 @@
     "ionic build"
   ],
   "before_install": [
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9876 http://localhost &
+  - "google-chrome-stable --headless --disable-gpu --remote-debugging-port=9876 http://localhost &"
   ],
   "install": [
     "npm install -g gulp bower cordova ionic",
