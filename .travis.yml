@@ -29,7 +29,7 @@
     "npm install",
     "bower update"
   ],
-  "node_js": "6.10.3",
+  "node_js": "8.11",
   "language": "node_js",
   "before_script": [
     "wget http://dl.google.com/android/android-sdk_r24.4-linux.tgz",
