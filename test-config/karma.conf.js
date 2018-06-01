@@ -24,6 +24,18 @@ module.exports = function(config) {
       Chrome_travis_ci: {
           base: 'Chrome',
           flags: ['--no-sandbox']
+      },
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: [
+          '--no-sandbox',
+          '--headless',
+          '--disable-gpu',
+          '--disable-translate',
+          '--disable-extensions',
+          // Without a remote debugging port, Google Chrome exits immediately.
+          '--remote-debugging-port=9876'
+        ]
       }
     },
     proxies: {
@@ -69,21 +81,8 @@ module.exports = function(config) {
   if (process.env.TRAVIS) {
     _config.browsers = ['ChromeHeadlessNoSandbox'];
     _config.singleRun = true;
-    _config.customLaunchers = {
-      ChromeHeadlessNoSandbox: {
-        base: 'Chrome',
-        flags: [
-          '--no-sandbox',
-          '--headless',
-          '--disable-gpu',
-          '--disable-translate',
-          '--disable-extensions',
-          // Without a remote debugging port, Google Chrome exits immediately.
-          '--remote-debugging-port=9222'
-        ]
-      }
-    };
     _config.concurrency = 1;
+    _config.browserDisconnectTimeout = 25000;
   }
  
   config.set(_config);
