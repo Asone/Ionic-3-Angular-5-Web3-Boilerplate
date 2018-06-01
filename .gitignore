@@ -5,3 +5,4 @@ documentation/
 .editorconfig
 node_modules/
 .vscode
+www/build/
