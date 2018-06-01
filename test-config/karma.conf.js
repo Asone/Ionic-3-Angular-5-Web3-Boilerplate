@@ -32,7 +32,7 @@ module.exports = function(config) {
 
     preprocessors: {
       './test-config/karma-test-shim.js': ['webpack'],
-      './src/**/*.spec.*':['webpack','coverage']
+      './src/**/*.spec.*':['webpack']
     },
 
     webpack: webpackConfig,
@@ -56,7 +56,7 @@ module.exports = function(config) {
       fixWebpackSourcePaths: true
     },
 
-    reporters: config.coverage ? ['kjhtml', 'dots','coverage','coverage-istanbul'] : ['kjhtml', 'dots'],
+    reporters: config.coverage ? ['kjhtml', 'dots'] : ['kjhtml', 'dots'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
@@ -67,7 +67,7 @@ module.exports = function(config) {
   };
 
   if (process.env.TRAVIS) {
-    _config.browsers = ['ChromeHeadless', 'ChromeHeadlessNoSandbox'];
+    _config.browsers = ['ChromeHeadlessNoSandbox'];
     _config.singleRun = true;
     _config.customLaunchers = {
       ChromeHeadlessNoSandbox: {
