@@ -67,7 +67,8 @@ module.exports = function(config) {
   };
 
   if (process.env.TRAVIS) {
-    _config.browsers = ['Chrome_travis_ci'];
+    console.log(Object.keys(_config));
+    _config.browsers = ['ChromeHeadless'];
     _config.singleRun = true;
     _config.concurrency = 1;
   }
