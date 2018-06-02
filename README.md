@@ -1,43 +1,29 @@
 
 # Another Ionic 3 & Angular 5 Boilerplate
 
-[![Build Status](https://travis-ci.org/Asone/ionic-3_Angular-5_Custom-Boilerplate.svg?branch=master)](https://travis-ci.org/Asone/ionic-3_Angular-5_Custom-Boilerplate) [![](https://circleci.com/gh/Asone/ionic-3_Angular-5_Custom-Boilerplate.png?circle-token=:circle-toke)](https://circleci.com/gh/Asone/ionic-3_Angular-5_Custom-Boilerplate)
+[![Build Status](https://travis-ci.org/Asone/Ionic-3-Angular-5-Web3-Boilerplate.svg?branch=master)](https://travis-ci.org/Asone/Ionic-3-Angular-5-Web3-Boilerplate)
 
-The following repo provides a boilerplate for projects intended to be written with Ionic 3 & Angular 5. 
+The following repo provides a boilerplate for projects intended to be written with Ionic 3, Angular 5 & Web3. 
 
-As there are many boilerplates for Ionic 3 and Angular 5 most of those didn't fit to my workflow as many bring little architecture and contextualization. 
+This repo is very similar of the [Ionic 3 & Angular 5 Boilerplate](https://travis-ci.org/Asone/ionic-3_Angular-5_Custom-Boilerplate) i've written as it is only a variation of it in order to integrate [Web3](https://github.com/ethereum/web3.js/). 
 
-Building a professional app is a complex workflow in which developpers often interact with poly-environments parameters, dependencies management, tests and documentation. 
-
-The repo intends to fullfill the most common expectations found in the workflows to create a clone&go boilerplate as up-to-date as possible.
-
+[Web3](https://github.com/ethereum/web3.js/) intends to allow your application to communicate with the [Ethereum Blockchain](https://www.ethereum.org/).
 
 # Install
 
-## Install without Docker : 
-
-You need to install `node` first in order to be able to download the following dependencies : 
-
+#### Install NPM : 
 #### Install Ionic : `npm i -g Ionic`
 #### Install Karma : `npm i karma --save-dev`
-#### Install Angular-cli : `npm -g angular-cli`
+#### install Angular-cli : `npm -g angular-cli`
 #### Install dependencies : `npm install`
-#### Generate documentation : `npm run doc`
+
 #### Perform unit tests : `npm test`
 #### Perform end-to-end tests :`npm e2e`
 
-## Install with Docker : 
-
-Make sure you've installed docker first
-
-`docker-compose build . && docker-compose up front -d`
-
-It will run a `ionic serve` instruction on port 8100.
 
 # Structure
 
 Even if there is no perfect folder structure, some recommandations exist about how to structure your project. 
-
 The repo brings the described structures and coding conventions, trying to stick as much as possible to the official recommendations.
 
 ## Root Structure
@@ -67,7 +53,6 @@ Global structure is the following :
 - _TestData				=> Mocked data for tests & development
 - _Services				=> Injectable classes for services like API requests
 - _Pages				=> Pages containers for Ionic
-
 ```
 
 ### Angular Classes & Components
