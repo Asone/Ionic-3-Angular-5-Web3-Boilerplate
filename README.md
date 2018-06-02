@@ -53,6 +53,10 @@ Global structure is the following :
 - _TestData				=> Mocked data for tests & development
 - _Services				=> Injectable classes for services like API requests
 - _Pages				=> Pages containers for Ionic
+<<<<<<< HEAD
+=======
+-
+>>>>>>> add readme
 ```
 
 ### Angular Classes & Components
@@ -141,11 +145,9 @@ Cordova |mobile application development framework | v8.0.0 | [Documentation](htt
 
 ## Angular Modules
 
-TODO
 
 ## Ionic Modules
 
-TODO
 
 
 # Included features
@@ -153,18 +155,8 @@ TODO
 ## Environment handling
 
 **Environment variables for build configuration.** 
-Useful for handling different environment dependencies likes IPs or network URIs.   
+Useful for handling different environment dependencies likes IPs or network UR.   
 
-## Travis Continuous integration ready
-
-This repo comes with a functionnal travis configuration. When committing your work travis will try the following build :
-- Cordova configuration
-- Build creation for the ionic app
-- Running unit tests
-
-## Circle CI integration ready
-
-Like Travis CI use, this repo provides also a **Circle CI configuration**. It will run a similar build as the one you can find for Travis.
 
 ## Storage service
 
@@ -184,16 +176,14 @@ Main App module has a built-in method to **load a session**.  If a `session` key
 
 useful for authentication based behaviours developments.
 
-## Good practices & conventions 
-
-- [Angular good practices](https://angular.io/guide/styleguide)
-- [TypeScript good practices](https://definitelytyped.org/guides/best-practices.html)
-
-
 # Licence
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+## Good practices & conventions 
 
+<<<<<<< HEAD
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+=======
+[Angular good practices](https://angular.io/guide/styleguide)
+[TypeScript good practices](https://definitelytyped.org/guides/best-practices.html)
+>>>>>>> add readme
