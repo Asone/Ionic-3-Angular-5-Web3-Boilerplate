@@ -1,8 +1,8 @@
 {
-  "name": "ionic-3_angular-5_boilerplate",
+  "name": "ionic-3_angular-5_web-3_boilerplate",
   "version": "0.0.1",
   "author": "Nelson Herbin",
-  "homepage": "https://github.com/Asone/ionic-3_Angular-5_Custom-Boilerplate",
+  "homepage": "https://github.com/Asone/Ionic-3-Angular-5-Web3-Boilerplate",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
