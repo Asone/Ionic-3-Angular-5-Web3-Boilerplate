@@ -1,0 +1,8 @@
+{
+  "name": "ionic3_angular5_Web3_boilerplate",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
