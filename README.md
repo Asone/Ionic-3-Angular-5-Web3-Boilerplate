@@ -1,5 +1,5 @@
 
-# Another Ionic 3 & Angular 5 Boilerplate
+# Another Ionic 3 & Angular 5 with Web3 Boilerplate
 
 [![Build Status](https://travis-ci.org/Asone/Ionic-3-Angular-5-Web3-Boilerplate.svg?branch=master)](https://travis-ci.org/Asone/Ionic-3-Angular-5-Web3-Boilerplate)
 
