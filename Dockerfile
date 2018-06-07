@@ -95,7 +95,7 @@ RUN echo ANDROID_HOME="${ANDROID_HOME}" >> /etc/environment
 
 #Licence script
 RUN mkdir tools
-COPY android-accept-licenses.sh /opt/tools/android-accept-licenses.sh
+COPY android-accept-licences.sh /opt/tools/android-accept-licenses.sh
 RUN chmod 777 /opt/tools/android-accept-licenses.sh
 
 ENV update asd

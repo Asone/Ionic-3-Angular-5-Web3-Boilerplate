@@ -1,0 +1,11 @@
+front:
+  tty: true
+  stdin_open: true
+  image: ahead-ionic
+  command: bash
+  volumes:
+    - .:/App:rw
+    - /dev/bus/usb:/dev/bus/usb
+  privileged: true
+  net: "host"
+  user: docker
