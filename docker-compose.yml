@@ -1,11 +1,16 @@
-front:
-  tty: true
-  stdin_open: true
-  image: ahead-ionic
-  command: bash
-  volumes:
-    - .:/App:rw
-    - /dev/bus/usb:/dev/bus/usb
-  privileged: true
-  net: "host"
-  user: docker
+version: '2.1'
+services:
+  front:
+    tty: true
+    stdin_open: true
+    image: beevelop/ionic
+    command: "ionic serve"
+    ports:
+      - 8100:8100
+      - 35729:35729
+      - 53703:53703
+    volumes:
+      - .:/App:rw
+    privileged: true
+    working_dir: /App
+    user: root
