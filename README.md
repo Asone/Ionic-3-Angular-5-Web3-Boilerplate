@@ -30,7 +30,9 @@ You need to install `node` first in order to be able to download the following d
 
 Make sure you've installed docker first
 
-`docker-compose build . && docker-compose up -d`
+`docker-compose build . && docker-compose up front -d`
+
+It will run a `ionic serve` instruction on port 8100.
 
 # Structure
 
@@ -154,10 +156,11 @@ Cordova |mobile application development framework | v8.0.0 | [Documentation](htt
 
 ## Angular Modules
 
+TODO
 
 ## Ionic Modules
 
-
+TODO
 
 
 # Included features
@@ -176,7 +179,7 @@ This repo comes with a functionnal travis configuration. When committing your wo
 
 ## Circle CI integration ready
 
-Like Travis CI use, this repo provides also a Circle CI configuration. It will run a similar build as the one you can find for Travis.
+Like Travis CI use, this repo provides also a **Circle CI configuration**. It will run a similar build as the one you can find for Travis.
 
 ## Storage service
 
