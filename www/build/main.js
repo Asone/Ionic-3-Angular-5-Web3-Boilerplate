@@ -264,7 +264,7 @@ var TabsPage = (function () {
         this.tab4Root = 'projects';
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/Tabs/Tabs.page.html"*/'\n<ion-tabs>\n  <ion-tab [root]="tab1Root"  tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root"  tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root"  tabIcon="contacts"></ion-tab>\n  <ion-tab [root]="tab4Root"  tabIcon="folder"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/Tabs/Tabs.page.html"*/,
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/App/src/_Pages/Tabs/Tabs.page.html"*/'\n<ion-tabs>\n  <ion-tab [root]="tab1Root"  tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root"  tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root"  tabIcon="contacts"></ion-tab>\n  <ion-tab [root]="tab4Root"  tabIcon="folder"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/App/src/_Pages/Tabs/Tabs.page.html"*/,
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -375,7 +375,7 @@ var MainPage = (function () {
         this._nav.setRoot(comp);
     };
     MainPage = MainPage_1 = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/Main/main.page.html"*/'  <ion-nav #maincontent [root]="rootPage"></ion-nav>'/*ion-inline-end:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/Main/main.page.html"*/,
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/App/src/_Pages/Main/main.page.html"*/'  <ion-nav #maincontent [root]="rootPage"></ion-nav>'/*ion-inline-end:"/App/src/_Pages/Main/main.page.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__Services_Auth_auth_service__["a" /* AuthService */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["g" /* NavController */]])
@@ -518,7 +518,7 @@ var HomePage = (function () {
     HomePage.prototype.ngOnInit = function () { };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/Home/Home.page.html"*/'<ion-content padding>\n    <ion-grid>\n        <ion-row>\n            <ion-title>HomePage</ion-title>\n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/Home/Home.page.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"/App/src/_Pages/Home/Home.page.html"*/'<ion-content padding>\n    <ion-grid>\n        <ion-row>\n            <ion-title>HomePage</ion-title>\n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/App/src/_Pages/Home/Home.page.html"*/,
         }),
         __metadata("design:paramtypes", [])
     ], HomePage);
@@ -669,8 +669,8 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../_Pages/About/About.page.module#AboutPageModule', name: 'about', segment: '/about', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../_Pages/Articles/Articles.page.module#ArticlesPageModule', name: 'articles', segment: '/articles', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../_Pages/Tabs/Tabs.page.module#TabsPageModule', name: 'tabs', segment: 'Tabs.page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../_Pages/Home/Home.page.module#HomePageModule', name: 'homepage', segment: 'Home.page', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../_Pages/Tabs/Tabs.page.module#TabsPageModule', name: 'tabs', segment: 'Tabs.page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../_Pages/Welcome/welcome.page.module#WelcomePageModule', name: 'welcome', segment: 'welcome.page', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -734,7 +734,7 @@ var AboutPage = (function () {
     }
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'Page[about]',template:/*ion-inline-start:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/About/About.page.html"*/'\n\n<ion-content padding>\n    <h2>About</h2>\n</ion-content>\n'/*ion-inline-end:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/About/About.page.html"*/,
+            selector: 'Page[about]',template:/*ion-inline-start:"/App/src/_Pages/About/About.page.html"*/'\n\n<ion-content padding>\n    <h2>About</h2>\n</ion-content>\n'/*ion-inline-end:"/App/src/_Pages/About/About.page.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
     ], AboutPage);
@@ -777,7 +777,7 @@ var ArticlesPage = (function () {
     };
     ArticlesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'Page[article]',template:/*ion-inline-start:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/Articles/Articles.page.html"*/'<ion-content>\n    <ion-grid>\n        <ion-row>\n            <ion-col col-12>\n                <h2>Articles</h2>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col col-12>\n                <ng-template *ngIf="articles.length > 0; then articlesList; else noArticles"></ng-template>\n                <ng-template #projectsList>\n                <ion-card *ngFor="let article of articles; let index = i" (click)="goto(project.id)">\n                        <ion-card-content>\n                            <ion-card-title>\n                                {{article.title}}\n                            </ion-card-title>\n                            <p>\n                                {{article.excerpt}}\n                            </p>\n                        </ion-card-content>\n                    </ion-card>\n            </ng-template>\n            <ng-template #noProject>\n                <div class="alert alert-info">Aucun projet n\'a été trouvé</div>\n            </ng-template>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/Articles/Articles.page.html"*/
+            selector: 'Page[article]',template:/*ion-inline-start:"/App/src/_Pages/Articles/Articles.page.html"*/'<ion-content>\n    <ion-grid>\n        <ion-row>\n            <ion-col col-12>\n                <h2>Articles</h2>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col col-12>\n                <ng-template *ngIf="articles.length > 0; then articlesList; else noArticles"></ng-template>\n                <ng-template #projectsList>\n                <ion-card *ngFor="let article of articles; let index = i" (click)="goto(project.id)">\n                        <ion-card-content>\n                            <ion-card-title>\n                                {{article.title}}\n                            </ion-card-title>\n                            <p>\n                                {{article.excerpt}}\n                            </p>\n                        </ion-card-content>\n                    </ion-card>\n            </ng-template>\n            <ng-template #noProject>\n                <div class="alert alert-info">Aucun projet n\'a été trouvé</div>\n            </ng-template>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/App/src/_Pages/Articles/Articles.page.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Config */]])
@@ -837,7 +837,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */])
     ], MyApp.prototype, "content", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/Asone/www/ionic3_angular5_boilerplate/src/app/app.html"*/'\n<ion-nav #rootcontent [root]="rootPage"></ion-nav>\n\n\n'/*ion-inline-end:"/Users/Asone/www/ionic3_angular5_boilerplate/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/App/src/app/app.html"*/'\n<ion-nav #rootcontent [root]="rootPage"></ion-nav>\n\n\n'/*ion-inline-end:"/App/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
@@ -920,7 +920,7 @@ var WelcomePage = (function () {
     };
     WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-welcome',template:/*ion-inline-start:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/Welcome/welcome.page.html"*/'\n<ion-content padding>\n    <ion-grid>\n        <ion-row  text-center>\n                <ion-col col-6 offset-3 >\n                    <img src="../../assets/imgs/logo.png" alt="Logo" class="img"/>\n                </ion-col>\n                <ion-col col-12>\n                    <h2>Welcome !</h2>\n                </ion-col>\n                <button ion-button col-12 round (click)="gotoHome()">Browse pages</button>\n\n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/Asone/www/ionic3_angular5_boilerplate/src/_Pages/Welcome/welcome.page.html"*/,
+            selector: 'page-welcome',template:/*ion-inline-start:"/App/src/_Pages/Welcome/welcome.page.html"*/'\n<ion-content padding>\n    <ion-grid>\n        <ion-row  text-center>\n                <ion-col col-6 offset-3 >\n                    <img src="../../assets/imgs/logo.png" alt="Logo" class="img"/>\n                </ion-col>\n                <ion-col col-12>\n                    <h2>Welcome !</h2>\n                </ion-col>\n                <button ion-button col-12 round (click)="gotoHome()">Browse pages</button>\n\n        </ion-row>\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/App/src/_Pages/Welcome/welcome.page.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
     ], WelcomePage);
