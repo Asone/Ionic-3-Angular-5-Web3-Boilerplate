@@ -5,7 +5,11 @@
 
 The following repo provides a boilerplate for projects intended to be written with Ionic 3 & Angular 5. 
 
-As there are many boilerplates for Ionic 3 and Angular 5, i couldnt find any satisfying repo providing a complete configuration as i would expect it personally, so here is my own. 
+As there are many boilerplates for Ionic 3 and Angular 5 most of those didn't fit to my workflow as many bring little architecture and contextualization. 
+
+Building a professional app is a complex workflow in which developpers often interact with poly-environments parameters, dependencies management, tests and documentation. 
+
+The repo intends to fullfill the most common expectations found in the workflows to create a clone&go boilerplate as up-to-date as possible.
 
 
 # Install
@@ -24,7 +28,10 @@ You need to install `node` first in order to be able to download the following d
 
 ## Install with Docker : 
 
-The repo provides a Docker configuration gracefully provided from [ionic-interactive-dockercontainer](https://github.com/note89/ionic-interactive-dockercontainer)
+Make sure you've installed docker first
+
+`docker-compose build . && docker-compose up -d`
+
 # Structure
 
 Even if there is no perfect folder structure, some recommandations exist about how to structure your project. 
