@@ -1,28 +1,43 @@
 
 # Another Ionic 3 & Angular 5 Boilerplate
 
-[![Build Status](https://travis-ci.org/Asone/ionic-3_Angular-5_Custom-Boilerplate.svg?branch=master)](https://travis-ci.org/Asone/ionic-3_Angular-5_Custom-Boilerplate)
+[![Build Status](https://travis-ci.org/Asone/ionic-3_Angular-5_Custom-Boilerplate.svg?branch=master)](https://travis-ci.org/Asone/ionic-3_Angular-5_Custom-Boilerplate) [![](https://circleci.com/gh/Asone/ionic-3_Angular-5_Custom-Boilerplate.png?circle-token=:circle-toke)](https://circleci.com/gh/Asone/ionic-3_Angular-5_Custom-Boilerplate)
 
 The following repo provides a boilerplate for projects intended to be written with Ionic 3 & Angular 5. 
 
-As there are many boilerplates for Ionic 3 and Angular 5, i couldnt find any satisfying repo providing a complete configuration as i would expect it personally, so here is my own. 
+As there are many boilerplates for Ionic 3 and Angular 5 most of those didn't fit to my workflow as many bring little architecture and contextualization. 
+
+Building a professional app is a complex workflow in which developpers often interact with poly-environments parameters, dependencies management, tests and documentation. 
+
+The repo intends to fullfill the most common expectations found in the workflows to create a clone&go boilerplate as up-to-date as possible.
 
 
 # Install
 
-#### Install NPM : 
+## Install without Docker : 
+
+You need to install `node` first in order to be able to download the following dependencies : 
+
 #### Install Ionic : `npm i -g Ionic`
 #### Install Karma : `npm i karma --save-dev`
-#### install Angular-cli : `npm -g angular-cli`
+#### Install Angular-cli : `npm -g angular-cli`
 #### Install dependencies : `npm install`
-
+#### Generate documentation : `npm run doc`
 #### Perform unit tests : `npm test`
 #### Perform end-to-end tests :`npm e2e`
 
+## Install with Docker : 
+
+Make sure you've installed docker first
+
+`docker-compose build . && docker-compose up front -d`
+
+It will run a `ionic serve` instruction on port 8100.
 
 # Structure
 
 Even if there is no perfect folder structure, some recommandations exist about how to structure your project. 
+
 The repo brings the described structures and coding conventions, trying to stick as much as possible to the official recommendations.
 
 ## Root Structure
@@ -52,7 +67,7 @@ Global structure is the following :
 - _TestData				=> Mocked data for tests & development
 - _Services				=> Injectable classes for services like API requests
 - _Pages				=> Pages containers for Ionic
--
+
 ```
 
 ### Angular Classes & Components
@@ -141,10 +156,11 @@ Cordova |mobile application development framework | v8.0.0 | [Documentation](htt
 
 ## Angular Modules
 
+TODO
 
 ## Ionic Modules
 
-
+TODO
 
 
 # Included features
@@ -152,8 +168,18 @@ Cordova |mobile application development framework | v8.0.0 | [Documentation](htt
 ## Environment handling
 
 **Environment variables for build configuration.** 
-Useful for handling different environment dependencies likes IPs or network UR.   
+Useful for handling different environment dependencies likes IPs or network URIs.   
 
+## Travis Continuous integration ready
+
+This repo comes with a functionnal travis configuration. When committing your work travis will try the following build :
+- Cordova configuration
+- Build creation for the ionic app
+- Running unit tests
+
+## Circle CI integration ready
+
+Like Travis CI use, this repo provides also a **Circle CI configuration**. It will run a similar build as the one you can find for Travis.
 
 ## Storage service
 
@@ -173,10 +199,16 @@ Main App module has a built-in method to **load a session**.  If a `session` key
 
 useful for authentication based behaviours developments.
 
-# Licence
-
-
 ## Good practices & conventions 
 
-[Angular good practices](https://angular.io/guide/styleguide)
-[TypeScript good practices](https://definitelytyped.org/guides/best-practices.html)
+- [Angular good practices](https://angular.io/guide/styleguide)
+- [TypeScript good practices](https://definitelytyped.org/guides/best-practices.html)
+
+
+# Licence
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
