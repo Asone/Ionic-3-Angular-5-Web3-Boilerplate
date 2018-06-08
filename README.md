@@ -1,5 +1,5 @@
 
-# Another Ionic 3 & Angular 5 Boilerplate
+# Another Ionic 3 & Angular 5 with Web3 Boilerplate
 
 [![Build Status](https://travis-ci.org/Asone/Ionic-3-Angular-5-Web3-Boilerplate.svg?branch=master)](https://travis-ci.org/Asone/Ionic-3-Angular-5-Web3-Boilerplate)
 
@@ -147,6 +147,10 @@ Cordova |mobile application development framework | v8.0.0 | [Documentation](htt
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> db2163a8140c3499c6dbb4c3d4c3c406b2dc09d2
 # Included features
 
 ## Environment handling
