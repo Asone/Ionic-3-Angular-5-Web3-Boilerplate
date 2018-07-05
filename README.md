@@ -53,7 +53,6 @@ Global structure is the following :
 - _TestData				=> Mocked data for tests & development
 - _Services				=> Injectable classes for services like API requests
 - _Pages				=> Pages containers for Ionic
--
 ```
 
 ### Angular Classes & Components
@@ -147,10 +146,6 @@ Cordova |mobile application development framework | v8.0.0 | [Documentation](htt
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> db2163a8140c3499c6dbb4c3d4c3c406b2dc09d2
 # Included features
 
 ## Environment handling
@@ -179,8 +174,10 @@ useful for authentication based behaviours developments.
 
 # Licence
 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Good practices & conventions 
 
 [Angular good practices](https://angular.io/guide/styleguide)
 [TypeScript good practices](https://definitelytyped.org/guides/best-practices.html)
+

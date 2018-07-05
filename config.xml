@@ -1,7 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Ionic 3 and Angular 5 Web 3 Boilerplate</name>
+
     <description>This is a boilerplate for Ionic 3, Angular 5 and Web3. Why this boilerplate when there is many others around ? This boilerplate integrates many other parameters for development and environments that are usually ignored in other boilerplates. </description>
+
     <author email="nelson@herbin.info" href="http://ionicframework.com/">Ionic Framework Team</author>
     <content src="index.html" />
     <access origin="*" />
