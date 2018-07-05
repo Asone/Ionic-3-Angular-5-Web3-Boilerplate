@@ -78,7 +78,7 @@ module.exports = function(config) {
     concurrency: Infinity,
   };
 
-  if (process.env.TRAVIS) {
+  if (process.env.TRAVIS || process.env.CIRCLECI) {
     _config.browsers = ['ChromeHeadlessNoSandbox'];
     _config.singleRun = true;
     _config.concurrency = 1;
